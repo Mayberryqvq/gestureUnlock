@@ -4,15 +4,423 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/container"
+    android:background="@color/dark_green"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/dark_green"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/line23"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:tag="23"
+            app:layout_constraintBottom_toBottomOf="@+id/dot2_unpicked"
+            app:layout_constraintEnd_toEndOf="@+id/dot3_unpicked"
+            app:layout_constraintStart_toStartOf="@+id/dot2_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot2_unpicked"
+            app:srcCompat="@drawable/line_horizontal" />
+
+        <ImageView
+            android:id="@+id/line45"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:tag="45"
+            app:layout_constraintBottom_toBottomOf="@+id/dot4_unpicked"
+            app:layout_constraintEnd_toEndOf="@+id/dot5_unpicked"
+            app:layout_constraintStart_toStartOf="@+id/dot4_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot4_unpicked"
+            app:srcCompat="@drawable/line_horizontal" />
+
+        <ImageView
+            android:id="@+id/line78"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:tag="78"
+            app:layout_constraintBottom_toBottomOf="@+id/dot7_unpicked"
+            app:layout_constraintEnd_toEndOf="@+id/dot8_unpicked"
+            app:layout_constraintStart_toStartOf="@+id/dot7_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot7_unpicked"
+            app:srcCompat="@drawable/line_horizontal" />
+
+        <ImageView
+            android:id="@+id/line89"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:tag="89"
+            app:layout_constraintBottom_toBottomOf="@+id/dot8_unpicked"
+            app:layout_constraintEnd_toEndOf="@+id/dot9_unpicked"
+            app:layout_constraintStart_toStartOf="@+id/dot8_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot8_unpicked"
+            app:srcCompat="@drawable/line_horizontal" />
+
+        <ImageView
+            android:id="@+id/line12"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:tag="12"
+            app:layout_constraintBottom_toBottomOf="@+id/dot1_unpicked"
+            app:layout_constraintEnd_toEndOf="@+id/dot2_unpicked"
+            app:layout_constraintStart_toStartOf="@+id/dot1_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot1_unpicked"
+            app:srcCompat="@drawable/line_horizontal" />
+
+        <ImageView
+            android:id="@+id/line56"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:tag="56"
+            app:layout_constraintBottom_toBottomOf="@+id/dot6_unpicked"
+            app:layout_constraintEnd_toEndOf="@+id/dot6_unpicked"
+            app:layout_constraintStart_toStartOf="@+id/dot5_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot6_unpicked"
+            app:srcCompat="@drawable/line_horizontal" />
+
+        <ImageView
+            android:id="@+id/line69"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:tag="69"
+            app:layout_constraintBottom_toBottomOf="@+id/dot9_unpicked"
+            app:layout_constraintEnd_toEndOf="@+id/dot6_unpicked"
+            app:layout_constraintStart_toEndOf="@+id/line56"
+            app:layout_constraintTop_toBottomOf="@+id/line36"
+            app:srcCompat="@drawable/line_vertical" />
+
+        <ImageView
+            android:id="@+id/line58"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:tag="58"
+            app:layout_constraintBottom_toBottomOf="@+id/dot8_unpicked"
+            app:layout_constraintEnd_toStartOf="@+id/line56"
+            app:layout_constraintStart_toEndOf="@+id/line45"
+            app:layout_constraintTop_toBottomOf="@+id/line25"
+            app:srcCompat="@drawable/line_vertical" />
+
+        <ImageView
+            android:id="@+id/line47"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:tag="47"
+            app:layout_constraintBottom_toBottomOf="@+id/dot7_unpicked"
+            app:layout_constraintEnd_toStartOf="@+id/line45"
+            app:layout_constraintStart_toStartOf="@+id/dot4_unpicked"
+            app:layout_constraintTop_toBottomOf="@+id/line14"
+            app:srcCompat="@drawable/line_vertical" />
+
+        <ImageView
+            android:id="@+id/line36"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:tag="36"
+            app:layout_constraintBottom_toBottomOf="@+id/dot6_unpicked"
+            app:layout_constraintEnd_toEndOf="@+id/dot3_unpicked"
+            app:layout_constraintStart_toEndOf="@+id/line23"
+            app:layout_constraintTop_toTopOf="@+id/dot3_unpicked"
+            app:srcCompat="@drawable/line_vertical" />
+
+        <ImageView
+            android:id="@+id/line14"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:tag="14"
+            app:layout_constraintBottom_toBottomOf="@+id/dot4_unpicked"
+            app:layout_constraintEnd_toStartOf="@+id/line12"
+            app:layout_constraintStart_toStartOf="@+id/dot1_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot1_unpicked"
+            app:srcCompat="@drawable/line_vertical" />
+
+        <ImageView
+            android:id="@+id/line25"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:tag="25"
+            app:layout_constraintBottom_toBottomOf="@+id/dot5_unpicked"
+            app:layout_constraintEnd_toStartOf="@+id/line23"
+            app:layout_constraintStart_toEndOf="@+id/line12"
+            app:layout_constraintTop_toTopOf="@+id/dot2_unpicked"
+            app:srcCompat="@drawable/line_vertical" />
+
+        <ImageView
+            android:id="@+id/line68"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:tag="68"
+            app:layout_constraintBottom_toBottomOf="@+id/dot8_unpicked"
+            app:layout_constraintEnd_toEndOf="@+id/dot9_unpicked"
+            app:layout_constraintStart_toStartOf="@+id/dot8_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot5_unpicked"
+            app:srcCompat="@drawable/line_left" />
+
+        <ImageView
+            android:id="@+id/line57"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:tag="57"
+            app:layout_constraintBottom_toBottomOf="@+id/dot8_unpicked"
+            app:layout_constraintEnd_toEndOf="@+id/dot5_unpicked"
+            app:layout_constraintStart_toStartOf="@+id/dot7_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot4_unpicked"
+            app:srcCompat="@drawable/line_left" />
+
+        <ImageView
+            android:id="@+id/line35"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:tag="35"
+            app:layout_constraintBottom_toTopOf="@+id/line69"
+            app:layout_constraintEnd_toEndOf="@+id/dot3_unpicked"
+            app:layout_constraintStart_toEndOf="@+id/line45"
+            app:layout_constraintTop_toTopOf="@+id/dot2_unpicked"
+            app:srcCompat="@drawable/line_left" />
+
+        <ImageView
+            android:id="@+id/line24"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:tag="24"
+            app:layout_constraintBottom_toTopOf="@+id/line58"
+            app:layout_constraintEnd_toStartOf="@+id/line23"
+            app:layout_constraintStart_toStartOf="@+id/dot4_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot1_unpicked"
+            app:srcCompat="@drawable/line_left" />
+
+        <ImageView
+            android:id="@+id/line59"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:tag="59"
+            app:layout_constraintBottom_toBottomOf="@+id/dot8_unpicked"
+            app:layout_constraintEnd_toEndOf="@+id/dot9_unpicked"
+            app:layout_constraintStart_toStartOf="@+id/dot5_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot6_unpicked"
+            app:srcCompat="@drawable/line_right" />
+
+        <ImageView
+            android:id="@+id/line26"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:tag="26"
+            app:layout_constraintBottom_toTopOf="@+id/line59"
+            app:layout_constraintEnd_toEndOf="@+id/dot3_unpicked"
+            app:layout_constraintStart_toStartOf="@+id/dot5_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot2_unpicked"
+            app:srcCompat="@drawable/line_right" />
+
+        <ImageView
+            android:id="@+id/line15"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:tag="15"
+            app:layout_constraintBottom_toTopOf="@+id/line58"
+            app:layout_constraintEnd_toEndOf="@+id/dot2_unpicked"
+            app:layout_constraintStart_toStartOf="@+id/dot4_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot1_unpicked"
+            app:srcCompat="@drawable/line_right" />
+
+        <ImageView
+            android:id="@+id/line48"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:tag="48"
+            app:layout_constraintBottom_toBottomOf="@+id/dot8_unpicked"
+            app:layout_constraintEnd_toStartOf="@+id/line56"
+            app:layout_constraintStart_toStartOf="@+id/dot7_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot4_unpicked"
+            app:srcCompat="@drawable/line_right" />
+
+        <ImageView
+            android:id="@+id/dot1_unpicked"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/dot4_unpicked"
+            app:layout_constraintEnd_toStartOf="@+id/dot2_unpicked"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/dot_normal" />
+
+        <ImageView
+            android:id="@+id/dot4_unpicked"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/dot7_unpicked"
+            app:layout_constraintEnd_toStartOf="@+id/dot5_unpicked"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dot1_unpicked"
+            app:srcCompat="@drawable/dot_normal" />
+
+        <ImageView
+            android:id="@+id/dot5_unpicked"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/dot8_unpicked"
+            app:layout_constraintEnd_toStartOf="@+id/dot6_unpicked"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/dot4_unpicked"
+            app:layout_constraintTop_toBottomOf="@+id/dot2_unpicked"
+            app:srcCompat="@drawable/dot_normal" />
+
+        <ImageView
+            android:id="@+id/dot6_unpicked"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/dot9_unpicked"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/dot5_unpicked"
+            app:layout_constraintTop_toBottomOf="@+id/dot3_unpicked"
+            app:srcCompat="@drawable/dot_normal" />
+
+        <ImageView
+            android:id="@+id/dot7_unpicked"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/dot8_unpicked"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dot4_unpicked"
+            app:srcCompat="@drawable/dot_normal" />
+
+        <ImageView
+            android:id="@+id/dot8_unpicked"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/dot9_unpicked"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/dot7_unpicked"
+            app:layout_constraintTop_toBottomOf="@+id/dot5_unpicked"
+            app:srcCompat="@drawable/dot_normal" />
+
+        <ImageView
+            android:id="@+id/dot9_unpicked"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/dot8_unpicked"
+            app:layout_constraintTop_toBottomOf="@+id/dot6_unpicked"
+            app:srcCompat="@drawable/dot_normal" />
+
+        <ImageView
+            android:id="@+id/dot2_unpicked"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/dot5_unpicked"
+            app:layout_constraintEnd_toStartOf="@+id/dot3_unpicked"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/dot1_unpicked"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/dot_normal" />
+
+        <ImageView
+            android:id="@+id/dot3_unpicked"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/dot6_unpicked"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/dot2_unpicked"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/dot_normal" />
+
+        <ImageView
+            android:id="@+id/dot9"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tag="9"
+            app:layout_constraintStart_toStartOf="@+id/dot9_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot9_unpicked"
+            app:srcCompat="@drawable/dot_selected" />
+
+        <ImageView
+            android:id="@+id/dot8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tag="8"
+            app:layout_constraintStart_toStartOf="@+id/dot8_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot8_unpicked"
+            app:srcCompat="@drawable/dot_selected" />
+
+        <ImageView
+            android:id="@+id/dot7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tag="7"
+            app:layout_constraintStart_toStartOf="@+id/dot7_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot7_unpicked"
+            app:srcCompat="@drawable/dot_selected" />
+
+        <ImageView
+            android:id="@+id/dot6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tag="6"
+            app:layout_constraintStart_toStartOf="@+id/dot6_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot6_unpicked"
+            app:srcCompat="@drawable/dot_selected" />
+
+        <ImageView
+            android:id="@+id/dot5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tag="5"
+            app:layout_constraintStart_toStartOf="@+id/dot5_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot5_unpicked"
+            app:srcCompat="@drawable/dot_selected" />
+
+        <ImageView
+            android:id="@+id/dot4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tag="4"
+            app:layout_constraintStart_toStartOf="@+id/dot4_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot4_unpicked"
+            app:srcCompat="@drawable/dot_selected" />
+
+        <ImageView
+            android:id="@+id/dot1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tag="1"
+            app:layout_constraintStart_toStartOf="@+id/dot1_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot1_unpicked"
+            app:srcCompat="@drawable/dot_selected" />
+
+        <ImageView
+            android:id="@+id/dot3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tag="3"
+            app:layout_constraintStart_toStartOf="@+id/dot3_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot3_unpicked"
+            app:srcCompat="@drawable/dot_selected" />
+
+        <ImageView
+            android:id="@+id/dot2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tag="5"
+            app:layout_constraintStart_toStartOf="@+id/dot2_unpicked"
+            app:layout_constraintTop_toTopOf="@+id/dot2_unpicked"
+            app:srcCompat="@drawable/dot_selected" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
