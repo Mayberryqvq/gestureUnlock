@@ -78,7 +78,7 @@ fun checkTouchView(event: MotionEvent): View? {
 //计算触摸点相对于父容器的坐标
 fun getTouchPoint(event: MotionEvent): Point {
     //相对于屏幕的高度 - 顶部Bar的高度 - 容器和内容区域顶部的高度
-    val y = event.y - getBarHeight(activity) - binding.dotsContainer.y
+    val y = event.rawY - getBarHeight(activity) - binding.dotsContainer.y
     val touchPoint = Point()
     touchPoint.x = event.x.toInt()
     touchPoint.y = y.toInt()

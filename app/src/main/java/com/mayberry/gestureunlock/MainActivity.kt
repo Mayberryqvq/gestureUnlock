@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
                                     checkingResult = false
                                 }
                             }
-                            if (checkingResult) {
+                            if (checkingResult && highlightedViewArray.size == checkPasswordViewArray.size) {
                                 Toast.makeText(applicationContext, "Your password is right", Toast.LENGTH_LONG).show()
                             } else {
                                 Toast.makeText(applicationContext, "Your password is wrong", Toast.LENGTH_LONG).show()
